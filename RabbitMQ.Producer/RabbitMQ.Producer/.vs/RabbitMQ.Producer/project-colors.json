@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "bfa8956f-b7ca-4301-81d3-e776c0ae2e9a": {
+      "ProjectGuid": "bfa8956f-b7ca-4301-81d3-e776c0ae2e9a",
+      "DisplayName": "RabbitMQ.Producer",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
