@@ -17,10 +17,10 @@ namespace RabbitMQ.Consumer
             consumer.Received += (sender, e) => {
                 var body = e.Body.ToArray();
                 var message = Encoding.UTF8.GetString(body);
-                Console.WriteLine($"Direct consume {message} at {DateTime.UtcNow.AddHours(5)}");
+                Console.WriteLine($"Direct Exchange {message} at {DateTime.UtcNow.AddHours(5)}");
             };
 
-            channel.BasicConsume("demo-direct-queue", autoAck: true, consumer: consumer);
+            channel.BasicConsume("demo-direct-queu", autoAck: true, consumer: consumer);
         }
     }
 }

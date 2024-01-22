@@ -11,10 +11,10 @@ var factory = new ConnectionFactory
 
 using var connection = factory.CreateConnection();
 using var channel = connection.CreateModel();
-Consumer.consumeMessage(channel);
+//Consumer.consumeMessage(channel);
 DirectExchangeConsumer.consumeMessage(channel);
-TopicExchangeConsumer.consumeMessage(channel);
-HeaderExchangeConsumer.consumeMessage(channel);
-FanoutExchangeConsumer.consumeMessage(channel);
+//TopicExchangeConsumer.consumeMessage(channel);
+//HeaderExchangeConsumer.consumeMessage(channel);
+//FanoutExchangeConsumer.consumeMessage(channel);
 
 Console.ReadLine();

@@ -10,7 +10,6 @@ namespace RabbitMQ.Producer
         {
 
             channel.QueueDeclare("demo-queue", durable: true, exclusive: false, autoDelete: false, arguments: null);
-
             message.name = "Basic Producer";
             message.message = $"Message sequence {(message.sequence == null ? 1 : message.sequence + 1)}";
             message.messageType = "Basic";
