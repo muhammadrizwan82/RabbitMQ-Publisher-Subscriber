@@ -20,7 +20,7 @@ namespace RabbitMQ.Consumer
                 Console.WriteLine($"Direct Exchange {message} at {DateTime.UtcNow.AddHours(5)}");
             };
 
-            channel.BasicConsume("demo-direct-queu", autoAck: true, consumer: consumer);
+            channel.BasicConsume("demo-direct-queue", autoAck: true, consumer: consumer);
         }
     }
 }
