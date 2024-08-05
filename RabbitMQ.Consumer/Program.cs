@@ -2,8 +2,6 @@
 using RabbitMQ.Client;
 using RabbitMQ.Consumer;
 
-
-
 var factory = new ConnectionFactory
 {
     Uri = new Uri("amqp://guest:guest@localhost:5672")
@@ -11,7 +9,8 @@ var factory = new ConnectionFactory
 
 using var connection = factory.CreateConnection();
 using var channel = connection.CreateModel();
-Consumer.consumeMessage(channel);
+
+BasicConsumer.consumeMessage(channel);
 DirectExchangeConsumer.consumeMessage(channel);
 TopicExchangeConsumer.consumeMessage(channel);
 HeaderExchangeConsumer.consumeMessage(channel);

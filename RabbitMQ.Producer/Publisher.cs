@@ -4,7 +4,7 @@ using System.Text;
 
 namespace RabbitMQ.Producer
 {
-    public static class Publisher
+    public static class BasicPublisher
     {
         public static Message producedMessage(IModel channel, Message message)
         {

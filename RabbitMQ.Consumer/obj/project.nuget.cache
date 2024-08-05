@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "SY816AJ8V1wj6JDLaMb/Gmh1O6VGpkCM2OUZh/86gGiNhTdSI1r6rZCMGcPSs2eoRY8aYznv6O4sn9GuVk9JPQ==",
+  "dgSpecHash": "bI2ORPWkiiMtOE3+Jw5aiLx4hjEF8UracPKUJJ1HKbKMuujVa5+CIBAVbutlcmZr30fxCgkCysTrmUCQmX6/MA==",
   "success": true,
   "projectFilePath": "E:\\Project\\Learning\\RabbitMQ-Excercise\\RabbitMQ-Publisher-Subscriber\\RabbitMQ.Consumer\\RabbitMQ.Consumer.csproj",
   "expectedPackageFiles": [

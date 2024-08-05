@@ -13,14 +13,14 @@ var directMessage = new Message();
 var topicExchange = new Message();
 var headerExchange = new Message();
 var fanoutExchange = new Message();
+
 while (true)
 {
-    basicMessage = Publisher.producedMessage(channel, basicMessage);
+    basicMessage = BasicPublisher.producedMessage(channel, basicMessage);
     directMessage =  DirectExchangePublisher.producedMessage(channel, directMessage);    
     topicExchange =  TopicExchangePublisher.producedMessage(channel, topicExchange);
     headerExchange = HeaderExchangePublisher.producedMessage(channel, headerExchange);
     fanoutExchange = FanoutExchangePublisher.producedMessage(channel, fanoutExchange);
-
 }
 
 

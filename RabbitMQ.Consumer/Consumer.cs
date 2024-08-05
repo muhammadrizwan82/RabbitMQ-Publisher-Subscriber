@@ -4,7 +4,7 @@ using System.Text;
 
 namespace RabbitMQ.Consumer
 {
-    public static class Consumer
+    public static class BasicConsumer
     {
         public static void consumeMessage(IModel channel) {
             channel.QueueDeclare("demo-queue", durable: true, exclusive: false, autoDelete: false, arguments: null);
